@@ -209,6 +209,11 @@ nav ul li a:hover::after {
     transition: background 0.5s, transform 0.5s;
 }
 
+.services-list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
@@ -228,18 +233,10 @@ nav ul li a:hover::after {
     display: inline-block;
     transition: font 0.5s, decoration 0.5s;
 }
-
-.services-list div:hover{
-    background-color: #ff004f;
-    transform: translateY(-10px);
-}
-
 .services-list div a:hover{
     font-size: 16px;
     text-decoration: underline;
 }
-
-
 
 /* ---------- Portfolio ---------- */
 
@@ -261,12 +258,22 @@ nav ul li a:hover::after {
     overflow: hidden;
 }
 
+.work:hover .layer{
+    height: 100%;
+}
+
 .work img{
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+
 
 .layer{
     width: 100%;
@@ -303,14 +310,6 @@ nav ul li a:hover::after {
     height: 60px;
     border-radius: 50%;
     text-align: center;
-}
-
-.work:hover img{
-    transform: scale(1.1);
-}
-
-.work:hover .layer{
-    height: 100%;
 }
 
 .btn{
@@ -445,9 +444,8 @@ nav .fas{
 @media only screen and (max-width: 600px) {
     
     /* ---------- Hero Section ---------- */
-
     nav{
-        padding:0px 30px;
+        padding:0px 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -469,11 +467,11 @@ nav .fas{
 
     .header-text{
         margin-top: 120%;
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .header-text h1{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     nav .fas{
@@ -503,6 +501,7 @@ nav .fas{
         right: 43px;
         cursor: pointer;
     }
+
 
     /* ---------- About Me ---------- */
 
@@ -583,7 +582,6 @@ nav .fas{
         border-radius: 50%;
         text-align: center;
     }
-
 
 
     /* ---------- Contact ---------- */
