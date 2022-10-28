@@ -447,7 +447,7 @@ nav .fas{
     /* ---------- Hero Section ---------- */
 
     nav{
-        padding:0px 40px 0px 40px;
+        padding:0px 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -468,7 +468,7 @@ nav .fas{
     }
 
     .header-text{
-        margin-top: 130%;
+        margin-top: 120%;
         font-size: 25px;
     }
     
