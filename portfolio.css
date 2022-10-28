@@ -411,7 +411,7 @@ form input, form textarea{
     border-radius: 6px;
 }
 
-.btn3{
+/* .btn3{
     display: block;
     margin: 10px 0 75px 0;
     width: fit-content;
@@ -422,7 +422,7 @@ form input, form textarea{
     text-decoration: none;
     color: white;
     transition: background 0.5s;
-}
+} */
 
 /* ----- Footer ----- */
 .copyright{
