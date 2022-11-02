@@ -1,5 +1,5 @@
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+const tablinks = document.getElementsByClassName("tab-links");
+const tabcontents = document.getElementsByClassName("tab-contents");
 
 function opentab(tabname){
     for(tablink of tablinks){
@@ -12,7 +12,7 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-var sidemenu = document.getElementById("sidemenu");
+const sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
     sidemenu.style.right = "0";
@@ -37,3 +37,5 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
   })
+
+  

@@ -443,6 +443,11 @@ form input, form textarea{
 /* -------------------- PHONES -------------------- */
 
 
+nav > a{
+    text-decoration: none;
+    color: #ff004f;
+}
+
 nav .fas{
     display: none;
 }
