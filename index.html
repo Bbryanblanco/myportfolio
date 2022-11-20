@@ -1,250 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bernard Bryan Blanco Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <script defer src="porfolio.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/08476528c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!------- Hero Section ------->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bernard Bryan Blanco Portfolio</title>
-  <link rel="stylesheet" href="portfolio.css" />
-  <script defer src="porfolio.js"></script>
-  <script defer src="https://kit.fontawesome.com/08476528c3.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!------- Hero Section ------->
-
-  <nav>
-    <img class="logo" src="./images/BRYANnewLogo.png" alt="" />
-    <ul id="sidemenu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <i class="fas fa-times" onclick="closemenu()"></i>
-    </ul>
-    <a href="#"><i class="fas fa-bars" onclick="openmenu()"></i></a>
-  </nav>
-  <div id="header">
-    <div class="container">
-      <div class="header-text">
-        <p>Web Developer</p>
-        <h1>
-          Hi, I'm Bernard <br />
-          <span>Bryan</span> Blanco <br />
-          from Philippines
-        </h1>
-        <img class="myphoto" src="./images/Myphoto.png" alt="" />
-      </div>
-    </div>
-  </div>
-
-  <!------- About Me ------->
-
-  <div id="about" class="parallax">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img class="about-me-photo" src="./images/portraitphoto.png" alt="" />
-        </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>
-            I am a creative, artistic, and ambitious Website Developer and
-            Graphic Designer with a talent for thinking outside the box and
-            coming up with innovative ideas and designs. I have strong
-            technical skills as well as excellent interpersonal skills,
-            enabling me to interact with a wide range of clients. I am eager
-            to be challenged to grow and further improve my Web Development
-            and Graphic Designing skills. My greatest passion in life is using
-            my technical know-how to benefit other people and organizations.
-          </p>
-
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">
-              Skills
-            </p>
-            <p class="tab-links" onclick="opentab('experience')">
-              Experience
-            </p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-          </div>
-
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>Web Development</span><br />Web app Development</li>
-              <li><span>UI/UX</span><br />Website Design/app interfaces</li>
-              <li>
-                <span>App Development</span><br />Building Android/IOS apps
-                (Currently Studying)
-              </li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li>
-                <span>2022</span><br />Web developer (WordPress) at Wizworxx
-                solution
-              </li>
-              <li>
-                <span>2021</span><br />Web developer (WordPress) TKC nation
-                co.
-              </li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li>
-                <span>2022 - Current</span><br />Full stack developer from
-                KodeGo Bootcamp (Ongoing)
-              </li>
-              <li>
-                <span>2006 - 2010</span><br />Bachelor in Information
-                technology from STI college
-              </li>
-              <li>
-                <span>2002 - 2006</span><br />Secondary level from Gen. T. De
-                leon National High School
-              </li>
-            </ul>
-          </div>
+    <nav>
+      <img class="logo" src="./images/BRYANnewLogo.png" alt="" />
+      <ul id="sidemenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <a href="#"><i class="fas fa-bars" onclick="openmenu()"></i></a>
+    </nav>
+    <div id="header">
+      <div class="container">
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm Bernard <br />
+            <span>Bryan</span> Blanco <br />
+            from Philippines
+          </h1>
+          <img class="myphoto" src="./images/Myphoto.png" alt="" />
         </div>
       </div>
     </div>
-  </div>
 
-  <!-------My Services  ------->
+    <!------- About Me ------->
 
-  <div id="services" class="parallax">
-    <div class="container">
-      <h1 class="sub-title">My Services</h1>
-      <div class="services-list">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Web Design</h2>
-          <p>
-            Your website is the backbone of your business, supporting all of
-            your digital marketing efforts,
-          </p>
-          <br />
-
-          <a href="">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-crop-simple"></i>
-          <h2>UI/UX Design</h2>
-          <p>
-            I use modern User Interface trends intended everywhere to satisfy
-            users' aesthetic requirements and provide them with a high level
-            of usability.
-          </p>
-          <a href="">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-brands fa-app-store"></i>
-          <h2>App Design</h2>
-          <p>
-            here you will get a great Flutter app with Amazing Design & Great
-            Performance.
-          </p>
-          <br />
-
-          <a href="">Coming soon</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!------- My Works ------->
-
-  <div id="portfolio" class="parallax">
-    <div class="container">
-      <h1 class="sub-title">My Works</h1>
-      <div class="work-list">
-        <div class="work">
-          <img src="./images/square1.png" alt="" />
-          <div class="layer">
-            <h3>Cross Play Website</h3>
+    <div id="about" class="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              class="about-me-photo"
+              src="./images/portraitphoto.png"
+              alt=""
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
             <p>
-              This is my 1st project using pure HTML, CSS and JAVASCRIPT, I
-              build this site as part of our miniproject in Bootcamp.
-              Responsive web design is about creating web pages that look good
-              on all devices! A responsive web design will automatically
-              adjust for different screen sizes and viewports.
+              I am a creative, artistic, and ambitious Website Developer and
+              Graphic Designer with a talent for thinking outside the box and
+              coming up with innovative ideas and designs. I have strong
+              technical skills as well as excellent interpersonal skills,
+              enabling me to interact with a wide range of clients. I am eager
+              to be challenged to grow and further improve my Web Development
+              and Graphic Designing skills. My greatest passion in life is using
+              my technical know-how to benefit other people and organizations.
             </p>
-            <a href="https://bernardbryanblanco.github.io/samplework001/" target="_blank"><i
-                class="fa-solid fa-up-right-from-square"></i></a>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li><span>UI/UX</span><br />Website Design/app interfaces</li>
+                <li>
+                  <span>App Development</span><br />Building Android/IOS apps
+                  (Currently Studying)
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022</span><br />Web developer (WordPress) at Wizworxx
+                  solution
+                </li>
+                <li>
+                  <span>2021</span><br />Web developer (WordPress) TKC nation
+                  co.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022 - Current</span><br />Full stack developer from
+                  KodeGo Bootcamp (Ongoing)
+                </li>
+                <li>
+                  <span>2006 - 2010</span><br />Bachelor in Information
+                  technology from STI college
+                </li>
+                <li>
+                  <span>2002 - 2006</span><br />Secondary level from Gen. T. De
+                  leon National High School
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="work">
-          <img src="./images/square2.png" />
-          <div class="layer">
-            <h3>Super Mario UI/UX Design</h3>
+    <!-------My Services  ------->
+
+    <div id="services" class="parallax">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
             <p>
-              The combination of UX and UI shapes your entire experience of a
-              product. While two comparable products might get you the same
-              end result, their UX/UI reflects how they provide it. If one of
-              the products has better UX/UI design than the other, people are
-              going to use it more because they prefer the overall experience.
+              Your website is the backbone of your business, supporting all of
+              your digital marketing efforts,
             </p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <br />
+
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I use modern User Interface trends intended everywhere to satisfy
+              users' aesthetic requirements and provide them with a high level
+              of usability.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              here you will get a great Flutter app with Amazing Design & Great
+              Performance.
+            </p>
+            <br />
+
+            <a href="">Coming soon</a>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="work">
-          <img src="./images/square3.png" alt="" />
-          <div class="layer">
-            <h3>Mobile App Mockup</h3>
-            <p>COMING SOON</p>
-            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+    <!------- My Works ------->
+
+    <div id="portfolio" class="parallax">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/square1.png" alt="" />
+            <div class="layer">
+              <h3>Cross Play Website</h3>
+              <p>
+                This is my 1st project using pure HTML, CSS and JAVASCRIPT, I
+                build this site as part of our miniproject in Bootcamp.
+                Responsive web design is about creating web pages that look good
+                on all devices! A responsive web design will automatically
+                adjust for different screen sizes and viewports.
+              </p>
+              <a
+                href="https://bernardbryanblanco.github.io/samplework001/"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./images/square2.png" />
+            <div class="layer">
+              <h3>Super Mario UI/UX Design</h3>
+              <p>
+                The combination of UX and UI shapes your entire experience of a
+                product. While two comparable products might get you the same
+                end result, their UX/UI reflects how they provide it. If one of
+                the products has better UX/UI design than the other, people are
+                going to use it more because they prefer the overall experience.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./images/square3.png" alt="" />
+            <div class="layer">
+              <h3>Mobile App Mockup</h3>
+              <p>COMING SOON</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
           </div>
         </div>
+        <a href="#" class="btn">See more</a>
       </div>
-      <a href="#" class="btn">See more</a>
     </div>
-  </div>
 
-  <!------- Contact ------->
+    <!------- Contact ------->
 
-  <div id="contact" class="parallax">
-    <div class="contact-container">
-      <div class="contact-left">
-        <h1 class="sub-title">Lets Connect</h1>
-        <p>
-          <i class="fa-solid fa-envelope"></i> bernardbrylablanco@gmail.com
-        </p>
-        <p><i class="fa-solid fa-phone"></i> +63 977-247-7712</p>
-        <div class="social-icons">
-          <a target="_blank" href="https://www.facebook.com/bernardbryanblanco04"><i
-              class="fa-brands fa-facebook"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/bernard-bryan-blanco/"><i
-              class="fa-brands fa-linkedin"></i></a>
-          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+    <div id="contact" class="parallax">
+      <div class="contact-container">
+        <div class="contact-left">
+          <h1 class="sub-title">Lets Connect</h1>
+          <p>
+            <i class="fa-solid fa-envelope"></i> bernardbrylablanco@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +63 977-247-7712</p>
+          <div class="social-icons">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/bernardbryanblanco04"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/bernard-bryan-blanco/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          </div>
+          <a href="./images/BenrardBryanBlancoCV.pdf" download class="btn2"
+            >Download CV</a
+          >
         </div>
-        <a href="./images/BenrardBryanBlancoCV.pdf" download class="btn2">Download CV</a>
-      </div>
 
-      <div class="contact-right">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="Name" placeholder="Your Name" required />
-          <input type="text" name="Email" placeholder="Your Email" required />
-          <textarea name="Message" rows="6" placeholder="How can i help you?"></textarea>
-          <span id="msg"></span>
-          <button type="submit" class="btn2">Submit</button>
-        </form>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="text" name="Email" placeholder="Your Email" required />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="How can i help you?"
+            ></textarea>
+            <span id="msg"></span>
+            <button type="submit" class="btn2">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="copyright parallax">
-    <p>
-      All rights reserved <i class="fa fa-copyright"></i> Powered By Bernard Bryan
-      Blanco
-    </p>
-  </div>
-</body>
-
+    <div class="copyright parallax">
+      <p>
+        All rights reserved <i class="fa fa-copyright"></i> Powered By Bernard Bryan
+        Blanco
+      </p>
+    </div>
+  </body>
 </html>
