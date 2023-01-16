@@ -287,16 +287,16 @@
           <a href=""><i class="fa-brands fa-square-instagram"></i></a>
         </div>
         <a target="_blank" href="./images/Blanco, Bernard Bryan CV.pdf"
-          onclick="confirm('View and download BRYAN CV?', download)" class="btn2">Download CV</a>
+          onclick="downloadFile()" class="btn2">Download or View CV</a>
       </div>
 
       <div class="contact-right">
         <form name="submit-to-google-sheet">
           <input type="text" name="Name" placeholder="Your Name" required />
-          <input type="text" name="Email" placeholder="Your Email" required />
+          <input type="text" name="Email" placeholder="Your Email" required onblur="validateEmail()"/>
           <textarea name="Message" rows="6" placeholder="How can i help you?"></textarea>
           <span id="msg"></span>
-          <button type="submit" class="btn2">Submit</button>
+          <button type="submit" class="btn2" onsubmit="return validateEmail()">Submit</button>
         </form>
       </div>
     </div>

@@ -21,6 +21,9 @@ function closemenu() {
     sidemenu.style.right = "-200px";
 }
 
+
+
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzYInetpkMpUEWIuajPjF0M1N2k78_ZqX-cHRJzWUnXNQzpBF4tUzLpRg-aem3LO3Z4/exec'
 const form = document.forms['submit-to-google-sheet'];
 const msg = document.getElementById("msg");
@@ -38,4 +41,20 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message))
   })
 
-  
+
+
+
+function downloadFile() {
+  var confirmed = confirm("Do you want to download Bernard Bryan Blanco CV?");
+  if (confirmed) {
+    var link = document.createElement("a");
+    link.href = "./images/Blanco, Bernard Bryan CV.pdf";
+    link.download = "file.pdf";
+    link.target = "_blank";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } else {
+    alert("View CV")
+  }
+}
