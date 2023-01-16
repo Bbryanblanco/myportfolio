@@ -29,7 +29,7 @@ body {
 }
 
 nav{
-    padding: 0 132px 0 60px;;
+    padding: 0 132px 0 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
